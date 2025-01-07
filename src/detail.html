@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="cs" data-bs-theme="auto">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Niceboy</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand bg-body-tertiary">
+      <div class="container">
+        <a href="index.html"><img src="images/Niceboy-nove-logo.png" alt="Niceboy logo" width="105" height="55"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 d-none d-xl-flex" type="search" placeholder="Hledat" aria-label="Search">
+              <button class="btn" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+              </button>
+            </form>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart2"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+                </svg>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-heart-fill pe-1" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                    </svg> Zobrazit oblíbené</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">
+                    <div class="d-flex align-items-center p-1">
+                      <div>
+                        <img src="images/hive-pins-anc-gallery-02.jpg" alt="Fotka produktu"
+                          style="width: 100px; height: 100px;">
+                      </div>
+                      <div class="ms-3">
+                        <p class="fw-semibold">HIVE Pins 3 ANC Sakura Pink</p>
+                        <p class="fw-bold">1 499 Kč</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">
+                    <div class="d-flex align-items-center p-1">
+                      <div>
+                        <img src="images/hive-podsie-3-gallery-01.jpg" alt="Fotka produktu"
+                          style="width: 100px; height: 100px;">
+                      </div>
+                      <div class="ms-3">
+                        <p class="fw-semibold">HIVE Podsie 3 Black</p>
+                        <p class="fw-bold">999 Kč</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-center p-2" href="#">
+                    Do košíku
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <section>
+        <div class="row my-5 d-flex justify-content-between">
+          <div class="col-xl-6 col-md-12">
+            <div class="mt-xl-5">
+              <div class="row">
+                <div class="col-xl-2 col-sm-12 order-2 order-xl-1">
+                  <div class="d-flex flex-xl-column">
+                    <a data-fancybox="gallery" href="images/hive-pins-3-anc-01-galerie.jpg">
+                      <img src="images/hive-pins-3-anc-01-galerie.jpg" class="img-fluid mb-2" alt="Fotka produktu">
+                    </a>
+                    <a data-fancybox="gallery" href="images/anc-galerie.jpg">
+                      <img src="images/anc-galerie.jpg" class="img-fluid mb-2 op-50" alt="Fotka produktu">
+                    </a>
+                    <a data-fancybox="gallery" href="images/anc-galerie2.jpg">
+                      <img src="images/anc-galerie2.jpg" class="img-fluid mb-2 op-50" alt="Fotka produktu">
+                    </a>
+                    <a data-fancybox="gallery" href="images/anc-galerie23.jpg">
+                      <img src="images/anc-galerie23.jpg" class="img-fluid mb-2 op-50" alt="Fotka produktu">
+                    </a>
+                    <a data-fancybox="gallery" href="images/anc-galerie3.jpg">
+                      <img src="images/anc-galerie3.jpg" class="img-fluid mb-2 op-50" alt="Fotka produktu">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-xl-10 col-sm-12 order-1 order-xl-2">
+                  <a data-fancybox="gallery" href="images/hive-pins-3-anc-01-galerie.jpg">
+                    <img src="images/hive-pins-3-anc-01-galerie.jpg" class="img-fluid" alt="Hlavní obrázek">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-5 col-md-12">
+            <h1 class="pb-2 pt-4 fw-bold">HIVE Pins 3 ANC</h1>
+
+            <a href="#popis" class="text-info text-decoration-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+              </svg>
+            </a>
+
+            <p class="py-2">Sluchátka Niceboy HIVE Pins 3 ANC nabídnou maximální zážitek z hudby s technologií pro
+              potlačení
+              ruchů z okolí. A pro maximální bezpečnost je tu pak mód Ambient, který k hudbě naopak zvuky z okolí přidá,
+              takže budete stále v obraze, co se kolem vás děje. Sluchátka nabídnou navíc výdrž až 40 hodin a vlastní
+              aplikaci Niceboy ION, se kterou dostáváte řadu zajímavých funkcí navíc. <a href="#popis"
+                class="text-info">Číst více</a></p>
+
+            <p class="fw-semibold">Barva</p>
+
+            <div class="row detail ps-2 pb-5">
+              <div class="detail-border col py-2">
+                <a href="#" class="detail-img"><img src="images/hive-pins-3-anc-01-galerie.jpg"
+                    alt="Barevná varianta produktu"></a>
+              </div>
+
+              <div class="detail-border col py-2 mx-2">
+                <a href="#" class="detail-img"><img src="images/anc-white.jpg" alt="Barevná varianta produktu"></a>
+              </div>
+
+              <div class="detail-border col py-2 me-2">
+                <a href="#" class="detail-img"><img src="images/anc-pink.jpg" alt="Barevná varianta produktu"></a>
+              </div>
+
+              <div class="detail-border col py-2">
+                <a href="#" class="detail-img"><img src="images/anc-blue.jpg" alt="Barevná varianta produktu"></a>
+              </div>
+            </div>
+
+            <p class="fw-bold fs-2">1 499 Kč</p>
+
+            <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart2"
+                viewBox="0 0 22 22">
+                <path
+                  d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+              </svg>Přidat do košíku
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="exampleModalLabel">Přidáno do košíku!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body row">
+                    <p>Mohlo by se vám také líbit:</p>
+                    <div class="col">
+                      <a href="index.html" class="text-decoration-none">
+                        <div class="card text-center">
+                          <img src="images/party-boom-gallery-01.jpg" class="card-img-top" alt="Fotka produktu">
+                          <div class="card-body">
+                            <p class="card-text">PARTY Boom</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col">
+                      <a href="index.html" class="text-decoration-none">
+                        <div class="card text-center">
+                          <img src="images/raze-mini4-gallery-01.jpg" class="card-img-top" alt="Fotka produktu">
+                          <div class="card-body">
+                            <p class="card-text">RAZE Mini 4</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+
+                    <div class="col">
+                      <a href="index.html" class="text-decoration-none">
+                        <div class="card text-center">
+                          <img src="images/hive-spacepods-galerie-01.jpg" class="card-img-top" alt="Fotka produktu">
+                          <div class="card-body">
+                            <p class="card-text">SpacePods</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Přejít do košíku</button>
+                    <a href="index.html" class="btn btn-primary text-dark text-decoration-none">Pokračovat v nákupu</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p><b>SKLADEM › 5</b>, ihned k odeslání</p>
+
+            <button type="button" class="btn btn-secondary w-100"><svg xmlns="http://www.w3.org/2000/svg" width="23"
+                height="23" fill="currentColor" class="bi bi-heart me-2" viewBox="0 0 16 16">
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+              </svg>Přidat do oblíbených</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active fw-bolder fs-5 text-dark" data-bs-toggle="tab" href="#popis-tab"
+              id="popis">Popis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bolder fs-5 text-info" data-bs-toggle="tab" href="#parametry-tab">Parametry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bolder fs-5 text-info" data-bs-toggle="tab" href="#recenze-tab"
+              id="recenze">Recenze</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="popis-tab">
+            <div class="row d-flex align-items-center bg-body-tertiary py-4 my-5 px-4 rounded" data-aos="fade-right">
+              <div class="col-xl-6 col-sm-12">
+                <h3>Zvuk bez ruchů s ANC nebo zvuk okolí s Ambient módem? Jak si budete přát</h3>
+              </div>
+
+              <div class="col-xl-6 col-sm-12">
+                <p>Sluchátka mají tři režimy poslechu, mezi kterými si můžete vybírat podle toho, co zrovna potřebujete.
+                  Kromě standardního módu se skvělým zvukem ve všech frekvencích je tu režim s technologií Active Noise
+                  Cancellation, která potlačuje zvuky z okolí. Můžete se tak zcela ponořit do poslechu hudby či filmu,
+                  aniž by vás cokoliv zvenčí rušilo. S módem Ambient pak můžete pro zvýšení své bezpečnosti naopak zvuky
+                  z okolí přidat, což je ideální při běhání městem - uslyšíte jak svou hudbu, tak okolní provoz.</p>
+              </div>
+            </div>
+
+            <div class="row d-flex align-items-center bg-body-tertiary py-4 my-5 px-4 rounded" data-aos="fade-left">
+              <div class="col-xl-6 col-sm-12">
+                <h3>Stabilní přenos zvuku bez prodlevy i pro sledování filmů a hraní her</h3>
+              </div>
+
+              <div class="col-xl-6 col-sm-12">
+                <p>S pokročilým BT 5.3 se do sluchátek zvuk přenáší spolehlivě a bez prodlev. A co když chcete hrát hry
+                  nebo sledovat filmy a potřebujete, aby se zvuk přenášel stejně rychle jako obraz? Pro ně disponují
+                  sluchátka speciálním gaming módem pro ultrarychlý přenos zvuku bez zpoždění.</p>
+              </div>
+            </div>
+
+            <div class="row d-flex align-items-center bg-body-tertiary py-4 my-5 px-4 rounded" data-aos="fade-right">
+              <div class="col-xl-6 col-sm-12">
+                <h3>Extra funkce s mobilní aplikací</h3>
+              </div>
+
+              <div class="col-xl-6 col-sm-12">
+                <p>Chcete si nastavit zvuk podle svého gusta? S mobilní aplikací Niceboy ION je díky funkci ekvalizéru
+                  možné. A nejen to, s touto aplikací můžete vyhledat odložená sluchátka nebo zjistit, na kolik procent
+                  jsou sluchátka nabitá - uvidíte procenta pro každé sluchátko zvlášť.</p>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="row">
+                <div class="col-xl-4 col-sm-12 d-flex flex-column align-items-center my-5" data-aos="zoom-in">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                    class="bi bi-droplet-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6M6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13" />
+                  </svg>
+
+                  <h5 class="pt-3">Provedení i pro horší podmínky</h5>
+
+                  <p class="text-center">
+                    Sluchátka mají stupeň krytí IPX4, takže jim nevadí ani déšť, ani pot.
+                  </p>
+                </div>
+
+                <div class="col-xl-4 col-sm-12 d-flex flex-column align-items-center my-5" data-aos="zoom-in">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                    class="bi bi-mic-fill" viewBox="0 0 16 16">
+                    <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z" />
+                    <path
+                      d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5" />
+                  </svg>
+
+                  <h5 class="pt-3">Podpora hlasových asistentů</h5>
+
+                  <p class="text-center">
+                    Sluchátka podporují ovládání pomocí hlasových asistentů Siri a Google Assistant.
+                  </p>
+                </div>
+
+                <div class="col-xl-4 col-sm-12 d-flex flex-column align-items-center my-5" data-aos="zoom-in">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
+                    class="bi bi-battery-charging" viewBox="0 0 16 16">
+                    <path
+                      d="M9.585 2.568a.5.5 0 0 1 .226.58L8.677 6.832h1.99a.5.5 0 0 1 .364.843l-5.334 5.667a.5.5 0 0 1-.842-.49L5.99 9.167H4a.5.5 0 0 1-.364-.843l5.333-5.667a.5.5 0 0 1 .616-.09z" />
+                    <path
+                      d="M2 4h4.332l-.94 1H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2.38l-.308 1H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2" />
+                    <path
+                      d="M2 6h2.45L2.908 7.639A1.5 1.5 0 0 0 3.313 10H2zm8.595-2-.308 1H12a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H9.276l-.942 1H12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" />
+                    <path
+                      d="M12 10h-1.783l1.542-1.639q.146-.156.241-.34zm0-3.354V6h-.646a1.5 1.5 0 0 1 .646.646M16 8a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8" />
+                  </svg>
+
+                  <h5 class="pt-3">Nabíjení přes USB-C</h5>
+
+                  <p class="text-center">
+                    Sluchátka se nabíjejí pomocí rozšířeného USB-C kabelu, který je součástí balení.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane d-none fade d-flex justify-content-center" id="parametry-tab" role="tabpanel"
+          aria-labelledby="parametry-tab">
+          <table class="table table-borderless w-75 text-center my-5 py-5">
+            <tbody>
+              <tr class="border-bottom">
+                <td class="fw-bold border-end w-50">Typ sluchátek:</td>
+                <td class="w-50">True Wireless</td>
+              </tr>
+              <tr class="border-bottom">
+                <td class="fw-bold border-end w-50">Mikrofon:</td>
+                <td class="w-50">✓</td>
+              </tr>
+              <tr class="border-bottom">
+                <td class="fw-bold border-end w-50">Typ připojení:</td>
+                <td class="w-50">BlueTooth</td>
+              </tr>
+              <tr class="border-bottom">
+                <td class="fw-bold border-end w-50">Maximální výdrž baterie - pouzdro (h):</td>
+                <td class="w-50">30</td>
+              </tr>
+              <tr class="border-bottom">
+                <td class="fw-bold border-end w-50">Maximální výdrž baterie - sluchátka (h):</td>
+                <td class="w-50">10</td>
+              </tr>
+              <tr class="border-bottom">
+                <td class="fw-bold border-end w-50">Maximální výdrž baterie (h):</td>
+                <td class="w-50">40</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tab-pane d-none fade" id="recenze-tab" role="tabpanel" aria-labelledby="recenze-tab">
+          <div class="pt-5 text-info row d-flex gap-2">
+            <p class="col-auto align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-star"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+              </svg>
+            </p>
+
+            <h3 class="col-auto align-items-center">4,0 z 5,0</h3>
+
+            <div class="pb-5">
+              <a href="#prvni-recenze" class="col-auto my-auto text-info">216 hodnocení</a>
+            </div>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="py-5" id="prvni-recenze">
+            <h6>Anonymní zákazník</h6>
+
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+            </p>
+
+            <p>
+              Sluchátka jsem používal asi rok a za tu dobu jim nemůžu nic vytknout.
+            </p>
+
+            <div class="row">
+              <div class="text-success col">
+                <div>
+                  <p class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-plus-circle-fill me-2" viewBox="0 0 16 16">
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                    </svg>
+                    Dobrý zvuk
+                  </p>
+
+                  <p class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-plus-circle-fill me-2" viewBox="0 0 16 16">
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                    </svg>
+                    Dobrá výdrž baterie
+                  </p>
+                </div>
+              </div>
+
+              <div class="text-danger col">
+                <p class="d-flex align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-dash-circle-fill me-2" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1z" />
+                  </svg>
+                  Nic
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pb-5">
+            <h6>Petr</h6>
+
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+              </svg>
+            </p>
+
+            <p>
+              Dvakrát jsem si objednal tato sluchátka. Poprvé mi přišla s vadou, kdy jedno sluchátko nefungovalo. Po
+              reklamaci a obdržení nového páru se pro změnu nepodařilo sluchátka spárovat s mobilním zařízením. Bohužel
+              pro mě velké zklamání.
+            </p>
+
+            <div class="row">
+              <div class="text-danger col">
+                <p class="d-flex align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-dash-circle-fill me-2" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1z" />
+                  </svg>
+                  Vůbec nedoporučuji
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pb-5">
+            <h6>Marie</h6>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-half"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+              </svg>
+            </p>
+
+            <p>
+              Sluchátka mají dobrou kvalitu, i když není na úrovni Applu nebo Beats, což je vzhledem k ceně
+              pochopitelné. Zvuk je výborný. Jediným nedostatkem je použitý materiál – hebký matný semiš, který se
+              rychle zašpiní. To platí jak pro samotná sluchátka, tak pro pouzdro.
+            </p>
+
+            <div class="row">
+              <div class="text-success col">
+                <div>
+                  <p class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-plus-circle-fill me-2" viewBox="0 0 16 16">
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                    </svg>
+                    Skvělý zvuk
+                  </p>
+
+                  <p class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-plus-circle-fill me-2" viewBox="0 0 16 16">
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                    </svg>
+                    ANC splňuje očekávání
+                  </p>
+
+                  <p class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-plus-circle-fill me-2" viewBox="0 0 16 16">
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                    </svg>
+                    Různé velikosti špuntů
+                  </p>
+
+                  <p class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-plus-circle-fill me-2" viewBox="0 0 16 16">
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                    </svg>
+                    Aplikace k přesnému nastavení sluchátek
+                  </p>
+
+                  <p class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-plus-circle-fill me-2" viewBox="0 0 16 16">
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                    </svg>
+                    Funguje skvěle s iOS
+                  </p>
+                </div>
+              </div>
+
+              <div class="text-danger col">
+                <p class="d-flex align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-dash-circle-fill me-2" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1z" />
+                  </svg>
+                  Materiál
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h6>Kateřina</h6>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+              </svg>
+            </p>
+
+            <p>
+              Sluchátka mám asi půl roku.
+            </p>
+            <div class="row">
+              <div class="text-success col">
+                <div>
+                  <p class="d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                      class="bi bi-plus-circle-fill me-2" viewBox="0 0 16 16">
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                    </svg>
+                    Cena
+                  </p>
+                </div>
+              </div>
+
+              <div class="text-danger col">
+                <p class="d-flex align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-dash-circle-fill me-2" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1z" />
+                  </svg>
+                  Krabička se blbě otevírá
+                </p>
+
+                <p class="d-flex align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                    class="bi bi-dash-circle-fill me-2" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1z" />
+                  </svg>
+                  Špatný mikrofon
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="py-5 bg-body-tertiary" id="dotaz">
+      <div class="container">
+        <h4 class="pb-3">Máte nějaký dotaz? Napiště nám!</h4>
+        <form>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Jméno</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Zadejte jméno">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">E-mailová adresa</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Zadejte e-mailovou adresu">
+          </div>
+          <div class="mb-3">
+            <label for="form-select" class="form-label">Vyberte typ dotazu:</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Typ dotazu</option>
+              <option value="1">Technická specifikace</option>
+              <option value="2">Dostupnost produktu</option>
+              <option value="3">Reklamace nebo oprava</option>
+              <option value="4">Příslušenství k produktu</option>
+              <option value="5">Jiný dotaz</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Dotaz</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+              placeholder="Zadejte dotaz"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Vyberte soubor (nepovinné):</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <div class="mb-4 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Souhlasím se zpracováním osobních údajů pro účely
+              odpovědi na můj dotaz.</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Odeslat dotaz</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pt-5 footer-bg text-light">
+    <div class="container">
+      <a href="index.html"><img src="images/logo-bile.png" alt="Niceboy logo" width="130" height="68"></a>
+
+      <div class="row py-4 width-css">
+        <a href="https://www.instagram.com/niceboy.cz/?hl=cs" class="col">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+          </svg>
+        </a>
+
+        <a href="https://www.facebook.com/niceboy.cz/" class="col">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook"
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+          </svg>
+        </a>
+
+        <a href="https://www.tiktok.com/@niceboytv" class="col">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-tiktok"
+            viewBox="0 0 16 16">
+            <path
+              d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+          </svg>
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCgkdCtsmXPlGeDxv0gvkL7w" class="col">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube"
+            viewBox="0 0 16 16">
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <h6>Produkty</h6>
+            <a href="index.html">Sluchátka</a>
+            <a href="index.html">Reproduktory</a>
+            <a href="#">Další produkty</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row">
+            <h6>Společnost</h6>
+            <a href="#">O nás</a>
+            <a href="#dotaz">Kontakt</a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row">
+            <h6>Další informace</h6>
+            <a href="#">Reklamace zboží</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4 py-3 footer-bg-dark">
+      <div class="container">
+        <p>Tato webová stránka čerpá inspiraci ze stránky <a href="https://niceboy.eu/cs/">Niceboy</a>. Obrázky
+          pocházejí
+          rovněž z této stránky.</p>
+        <p>Vytvořila Valérie Šprojcarová 2025 (Studentský projekt)</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
