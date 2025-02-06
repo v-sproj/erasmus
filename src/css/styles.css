@@ -74,8 +74,6 @@
  height: auto;
 }
 
-
-
 .bg-ceny {
   background-color: #c21e2ece;
 }
@@ -95,11 +93,21 @@
   text-align: center;
  }
 
+ .kosik-img img {
+  width: 150px;
+  height: auto;
+ }
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 1200px) {
  .width-css {
    width: 45%;
   }
+
+  .kosik-img img {
+    width: 200px;
+    height: auto;
+   }
 
 }
