@@ -7,8 +7,8 @@
 }
 
 .detail-img img {
-  width: 95px;
-  height: 95px;
+  width: 33px;
+  height: 33px;
 }
 
 .detail-border {
@@ -78,7 +78,6 @@
   background-color: #c21e2ece;
 }
 
-
 @media screen and (max-width: 576px) {
  .detail-img img {
    width: 80px;
@@ -111,3 +110,5 @@
    }
 
 }
+
+
